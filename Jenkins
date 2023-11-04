@@ -18,8 +18,8 @@ pipeline {
         stage('Deploy to Apache') {
             steps {
                 // Copy the code to the Apache document root directory
-                bat script: '''
-                    xcopy /s /e /y "C:\\Users\\CHAHAT\\Desktop\\amazon\\Amazon-Clone" "C:\\Apache24\\htdocs"
+                bat : '''
+                    xcopy /s /e /y "C:\\Users\\CHAHAT\\amazon\\Amazon-Clone" "C:\\Apache24\\htdocs"
                 '''
             }
         }
